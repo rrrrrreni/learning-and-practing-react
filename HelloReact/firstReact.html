@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Practice</title>
+    <script src="script/react.development.js"></script>
+    <script src="script/react-dom.development.js"></script>
+    <script src="script/babel.min.js"></script>
+</head>
+<body>
+    <!-- 
+        React所操作的元素称为React元素，并不是真正的原生DOM元素
+        React通过虚拟DOM 将React元素和原生DOM，进行映射
+        虚拟DOM的好处：
+        1.降低API复杂度；
+        2.解决兼容性问题；
+        3.提升性能（减少DOM的不必要操作
+     -->
+     <button id="btn">click</button>
+    <div id="root"></div>
+    <script type="text/babel">
+        const data = ['孙悟空','猪八戒','沙和尚'];
+        const list = <ul>
+            {data.map(item=><li key={item}>{item}</li>)}
+            </ul>
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(list);
+
+        const btn = document.getElementById('btn');
+        btn.onclick=function(){
+            const data = ['孙悟空','tom','猪八戒','沙和尚'];
+            const list = <ul>
+                {data.map(item=><li key={item}>{item}</li>)}
+                </ul>
+            root.render(list);
+        }
+    </script>
+</body>
+</html>
