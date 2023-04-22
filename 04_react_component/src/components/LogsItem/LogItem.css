@@ -1,0 +1,25 @@
+.item {
+    display: flex;
+    background-color: #FCBF49;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    padding: 6px;
+    margin: 10px;
+
+}
+
+.con {
+    flex: auto;
+    text-align: center;
+}
+
+.wenzi {
+    font-size: 16px;
+    color: #194B49;
+}
+
+.shijian {
+    line-height: 40px;
+    color: #D62828;
+
+}
