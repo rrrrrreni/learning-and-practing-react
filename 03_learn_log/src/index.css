@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: pink;
+}
+
+.log {
+    background-color: #EAE2B7;
+    margin: 20px auto;
+    width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.item {
+    display: flex;
+    background-color: #FCBF49;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    padding: 6px;
+
+}
+
+.date {
+    width: 100px;
+    overflow: hidden;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #fff;
+
+
+}
+
+.month {
+    background-color: #D62828;
+    color: #fff;
+    line-height: 2;
+}
+
+.day {
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.con {
+    flex: auto;
+    text-align: center;
+}
+
+.wenzi {
+    font-size: 16px;
+    color: #194B49;
+}
+
+.shijian {
+    line-height: 40px;
+    color: #D62828;
+
+}
