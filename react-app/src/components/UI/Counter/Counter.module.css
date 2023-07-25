@@ -1,0 +1,11 @@
+.Sub,
+.Add{
+    border: none;
+    background-color: #FCBF49;
+    width: 35rem;
+    height: 35rem;
+    line-height: 30rem;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 0;
+}

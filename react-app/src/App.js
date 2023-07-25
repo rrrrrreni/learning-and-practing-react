@@ -1,8 +1,12 @@
 import './App.css';
+import Meals from './components/Meals/Meals';
+
 
 function App() {
   return (
-   <div style={{width:'375rem',height:200,backgroundColor:'#bfa'}}></div>
+   <div>
+    <Meals/>
+   </div>
   );
 }
 
